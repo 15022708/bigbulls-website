@@ -11,8 +11,8 @@
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-	  background: url('images/pic2.jpg') no-repeat center center fixed;
-	  background-size: cover;
+      background: url('images/pic2.jpg') no-repeat center center fixed;
+      background-size: cover;
     }
 
     .hero-section {
@@ -173,6 +173,12 @@
       margin-top: 40px;
     }
 
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
     @media (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -187,6 +193,11 @@
       .gallery img {
         width: 100%;
         height: auto;
+      }
+      .video-container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
       }
     }
   </style>
@@ -249,6 +260,20 @@
       <a href="https://www.facebook.com/bigbulls.cheer" target="_blank"><i class="fab fa-facebook"></i></a>
       <a href="https://www.instagram.com/bigbulls.cheer/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@vinacheer" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </section>
+
+  <!-- Video Highlight Section -->
+  <section id="highlight">
+    <h2 class="section-title">Video Nổi Bật</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/Y3rj6vEAonE" 
+        title="Video Highlight"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
     </div>
   </section>
 
